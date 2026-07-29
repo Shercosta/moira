@@ -1,4 +1,3 @@
-import { Navbar } from "../components/local/Navbar";
 import { Hero } from "../components/local/Hero";
 import { Destination } from "../components/local/Destination";
 import { useHero } from "../context/HeroContext";
@@ -36,9 +35,6 @@ function HomePage() {
         {/* Content */}
         <div className="relative z-10 w-[100%] h-[90%] lg:h-[100%] p-5">
           <div className="w-full h-full border-4 border-white/30 rounded-[35px] py-8 px-10 flex flex-col">
-            {/* navbar */}
-            <Navbar />
-
             {/* content */}
             <Hero heroDestination={heroDestination} />
           </div>

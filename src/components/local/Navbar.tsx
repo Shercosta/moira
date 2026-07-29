@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
-import { HavenTripText } from "./Haventrip-Text";
 import { Menu } from "lucide-react";
 import { constructWhatsappChatAndOpen, idNavigator } from "../../lib/common";
+import { MoiraText } from "./Moira-Text";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,37 +13,33 @@ export function Navbar() {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img
-            src="https://raw.githubusercontent.com/Shercosta/fe-haventrip/refs/heads/master/public/logo-only-transparent.png"
-            alt="haventrip logo"
-            width={36}
-          />
-          <HavenTripText classNameBoth="text-shadow-white-glow text-xl" />
+          <MoiraText className="text-xl" />
         </div>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex items-center gap-2 bg-black/10 backdrop-blur-sm px-4 py-2 rounded-xl">
-          <Button
-            variant={"none"}
-            className="text-white/80 font-normal hover:text-white"
-            onClick={() => idNavigator("destination")}
-          >
-            Destinasi
+        <div className="hidden md:flex items-center gap-2">
+          <Button variant={"none"} className="font-normal">
+            Home
           </Button>
-          <Button
-            variant={"none"}
-            className="text-white/80 font-normal hover:text-white"
-            onClick={() => idNavigator("footer")}
-          >
-            Kontak
+          <Button variant={"none"} className="font-normal">
+            About Us
           </Button>
+          <Button variant={"none"} className="font-normal">
+            Services
+          </Button>
+          <Button variant={"none"} className="font-normal">
+            FAQ
+          </Button>
+        </div>
+
+        <div>
           <Button
             variant={"secondary"}
             onClick={() => {
               constructWhatsappChatAndOpen({});
             }}
           >
-            Pesan Sekarang
+            Contact Us
           </Button>
         </div>
 

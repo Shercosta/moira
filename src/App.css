@@ -197,3 +197,56 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Custom CSS */
+
+/* From Uiverse.io by joe-watson-sbf */
+.btn-joe {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #1d413b;
+  /* text-transform: uppercase; */
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn-joe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #1d413b;
+  transition: 0.5s ease;
+}
+
+.btn-joe:hover {
+  color: #f6f6f6;
+  transition-delay: 0.5s;
+}
+
+.btn-joe:hover::before {
+  width: 100%;
+}
+
+.btn-joe::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #295b53;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn-joe:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}

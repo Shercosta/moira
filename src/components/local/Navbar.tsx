@@ -21,7 +21,7 @@ export function Navbar() {
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-2 md:w-120 justify-between">
           {navItems.map((item) => (
-            <Button variant={"none"} className="font-normal" key={item}>
+            <Button variant={"none"} className="font-normal btn-joe" key={item}>
               {item}
             </Button>
           ))}

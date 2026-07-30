@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
-import { constructWhatsappChatAndOpen, idNavigator } from "../../lib/common";
+import { constructWhatsappChatAndOpen } from "../../lib/common";
 import { MoiraText } from "./Moira-Text";
+
+const navItems = ["Home", "About Us", "Services", "FAQ"];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,31 +12,25 @@ export function Navbar() {
   return (
     <nav className="w-full relative mb-10">
       {/* Top bar */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mx-8 my-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <MoiraText className="text-xl" />
+          <MoiraText className="text-3xl font-bold tracking-tight text-primary transition-all duration-300 hover:scale-105 hover:text-secondary" />
         </div>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex items-center gap-2">
-          <Button variant={"none"} className="font-normal">
-            Home
-          </Button>
-          <Button variant={"none"} className="font-normal">
-            About Us
-          </Button>
-          <Button variant={"none"} className="font-normal">
-            Services
-          </Button>
-          <Button variant={"none"} className="font-normal">
-            FAQ
-          </Button>
+        <div className="hidden md:flex items-center gap-2 md:w-120 justify-between">
+          {navItems.map((item) => (
+            <Button variant={"none"} className="font-normal" key={item}>
+              {item}
+            </Button>
+          ))}
         </div>
 
-        <div>
+        <div className="hidden md:flex items-center gap-2">
           <Button
-            variant={"secondary"}
+            variant={"default"}
+            className="rounded-full font-thin px-5"
             onClick={() => {
               constructWhatsappChatAndOpen({});
             }}
@@ -44,36 +40,22 @@ export function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-white" onClick={() => setOpen(!open)}>
+        <button className="md:hidden text-black" onClick={() => setOpen(!open)}>
           <Menu />
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="absolute top-full left-0 w-full mt-4 md:hidden bg-black/40 backdrop-blur-md p-4 rounded-xl border border-white/20 transition-all duration-300 z-50">
+        <div className="absolute top-full left-0 w-full mt-4 md:hidden bg-background p-4 rounded-xl transition-all duration-300 z-50">
           <div className="flex flex-col gap-2">
-            <Button
-              variant={"none"}
-              className="text-white/80 justify-start hover:text-white"
-              onClick={() => idNavigator("destination")}
-            >
-              Destinasi
-            </Button>
-            <Button
-              variant={"none"}
-              className="text-white/80 justify-start hover:text-white"
-              onClick={() => idNavigator("footer")}
-            >
-              Kontak
-            </Button>
-            <Button
-              variant={"secondary"}
-              onClick={() => {
-                constructWhatsappChatAndOpen({});
-              }}
-            >
-              Pesan Sekarang
+            {navItems.map((item) => (
+              <Button variant={"none"} className="font-normal" key={item}>
+                {item}
+              </Button>
+            ))}
+            <Button variant={"secondary"} className="text-text-light font-thin">
+              Contact Us
             </Button>
           </div>
         </div>

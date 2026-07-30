@@ -129,6 +129,56 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+@theme {
+  /* Brand */
+  --color-primary: #1d413b;
+  --color-secondary: #295b53;
+  --color-accent: #418c7f;
+  --color-teal: #367469;
+  --color-muted: #88aba4;
+
+  /* Surfaces */
+  --color-background: #f6f6f6;
+  --color-surface: #e9e9dd;
+
+  /* Text */
+  --color-text: #1d413b;
+  --color-text-light: #f6f6f6;
+
+  /* Borders */
+  --color-border: #d7ddd9;
+}
+
+/* Brand */
+.cceucx {
+  /* --color-primary: #1d413b; */
+  color: #1d413b;
+  /* --color-secondary: #295b53; */
+  color: #295b53;
+  /* --color-accent: #418c7f; */
+  color: #418c7f;
+  /* --color-teal: #367469; */
+  color: #367469;
+  /* --color-muted: #88aba4; */
+  color: #88aba4;
+
+  /* Surfaces */
+  /* --color-background: #f6f6f6; */
+  color: #f6f6f6;
+  /* --color-surface: #e9e9dd; */
+  color: #e9e9dd;
+
+  /* Text */
+  /* --color-text: #1d413b; */
+  color: #1d413b;
+  /* --color-text-light: #f6f6f6; */
+  color: #f6f6f6;
+
+  /* Borders */
+  /* --color-border: #d7ddd9; */
+  color: #d7ddd9;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

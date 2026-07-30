@@ -1,6 +1,6 @@
 export function SubHero() {
   return (
-    <div className="flex justify-center gap-5">
+    <div className="hidden md:flex justify-center gap-5 my-10">
       <img
         src="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/tech-meeting-flatlay.jpg"
         alt="tech-meeting-flatlay.jpg"

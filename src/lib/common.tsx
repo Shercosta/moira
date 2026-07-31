@@ -137,8 +137,8 @@ export function constructWhatsappChatAndOpen({
   meetingPoint,
   amount,
 }: Reservation) {
-  let message = "Hai HavenTrip!\n";
-  message += "Saya ingin memesan trip";
+  let message = "Hai Moira Admin!\n";
+  message += "Saya ingin diskusi";
 
   message += ".\n\n";
 

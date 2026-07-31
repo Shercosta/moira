@@ -253,8 +253,10 @@
 
 .bg-subtle-dark {
   background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/dark-bg.png");
+  background-size: cover;
 }
 
 .bg-subtle-light {
   background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/light-bg.png");
+  background-size: cover;
 }

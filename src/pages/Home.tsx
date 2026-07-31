@@ -1,3 +1,4 @@
+import { ContactUs } from "@/components/local/Contact-Us";
 import { Hero } from "@/components/local/Hero";
 import { QuickAccessCategories } from "@/components/local/Quick-Access-Categories";
 import { SubHero } from "@/components/local/Sub-Hero";
@@ -8,6 +9,7 @@ function HomePage() {
       <Hero />
       <SubHero />
       <QuickAccessCategories />
+      <ContactUs />
     </>
   );
 }

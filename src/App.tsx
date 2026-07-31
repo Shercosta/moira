@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/local/Navbar";
 import HomePage from "./pages/Home";
 import { DestinationPage } from "./pages/Destination";
+import { Footer } from "./components/local/Footer";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         {/* dynamic route */}
         <Route path="/destination/:id" element={<DestinationPage />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

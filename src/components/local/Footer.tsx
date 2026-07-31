@@ -1,112 +1,113 @@
-import { HavenTripText } from "./Haventrip-Text";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { Mail, Phone } from "lucide-react";
+import { MoiraText } from "./Moira-Text";
 
 export function Footer() {
   return (
-    <footer
-      id="footer"
-      className="
-        relative overflow-hidden
-        bg-gradient-to-b
-        from-sky-50
-        via-white
-        to-blue-100
-        border-t border-blue-200/40
-      "
-    >
-      {/* soft background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-300/10 blur-3xl rounded-full pointer-events-none" />
+    <footer id="footer" className="bg-subtle-light px-5 py-12 md:px-8 lg:px-16">
+      <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 lg:grid-cols-4">
+        {/* Brand */}
+        <div>
+          <MoiraText className="text-5xl font-bold tracking-tight text-primary transition-all duration-300 hover:scale-105 hover:text-secondary" />
 
-      {/* Main content */}
-      <div
-        className="
-          relative z-10
-          min-h-[45vh]
-          flex flex-col lg:flex-row
-          items-center justify-center
-          gap-8 lg:gap-16
-          px-6 py-16
-        "
-      >
-        {/* Logo */}
-        <div className="relative">
-          <div className="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full scale-75" />
-
-          <img
-            src="https://raw.githubusercontent.com/Shercosta/fe-haventrip/refs/heads/master/public/logo-only-transparent.png"
-            alt="haventrip logo"
-            className="
-              relative z-10
-              w-36 h-36
-              sm:w-44 sm:h-44
-              lg:w-80 lg:h-80
-              object-contain
-              drop-shadow-[0_20px_40px_rgba(0,150,255,0.25)]
-            "
-          />
+          <p className="mt-5 text-sm leading-7 text-muted-foreground">
+            Your technology partner for custom software development, system
+            integration, and digital transformation tailored to your business.
+          </p>
         </div>
 
-        {/* Brand */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <HavenTripText classNameBoth="text-5xl sm:text-7xl lg:text-[10rem] leading-none tracking-tight font-black" />
+        {/* Navigation */}
+        <div>
+          <h3 className="mb-4 font-semibold text-primary">Navigation</h3>
 
-          <p
-            className="
-              mt-5
-              max-w-lg
-              text-sky-900/70
-              text-sm sm:text-base
-              leading-relaxed
-            "
-          >
-            Jelajahi pulau pilihan, pantai tersembunyi, dan perjalanan tak
-            terlupakan melintasi destinasi terindah di Indonesia.
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li>
+              <a href="#hero" className="hover:text-primary">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#services" className="hover:text-primary">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="#about" className="hover:text-primary">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#contactUs" className="hover:text-primary">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h3 className="mb-4 font-semibold text-primary">Contact</h3>
+
+          <div className="space-y-4 text-sm text-muted-foreground">
+            <a
+              href="tel:+6281296370073"
+              className="flex items-center gap-3 hover:text-primary"
+            >
+              <Phone size={18} />
+              +62 812-9637-0073
+            </a>
+
+            <a
+              href="mailto:shercostagp+moira@gmail.com"
+              className="flex items-center gap-3 hover:text-primary"
+            >
+              <Mail size={18} />
+              shercostagp+moira@gmail.com
+            </a>
+          </div>
+        </div>
+
+        {/* Social */}
+        <div>
+          <h3 className="mb-4 font-semibold text-primary">Follow Us</h3>
+
+          <div className="flex gap-4">
+            <a
+              href="#"
+              className="rounded-full bg-primary/10 p-3 text-primary transition hover:bg-primary hover:text-white"
+            >
+              <FaFacebookF size={18} />
+            </a>
+
+            <a
+              href="#"
+              className="rounded-full bg-primary/10 p-3 text-primary transition hover:bg-primary hover:text-white"
+            >
+              <FaInstagram size={18} />
+            </a>
+
+            <a
+              href="#"
+              className="rounded-full bg-primary/10 p-3 text-primary transition hover:bg-primary hover:text-white"
+            >
+              <FaLinkedinIn size={18} />
+            </a>
+          </div>
+
+          <p className="mt-5 text-sm text-muted-foreground">
+            Stay connected and follow our latest updates.
           </p>
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div
-        className="
-          relative z-10
-          border-t border-blue-200/40
-          px-6 lg:px-10
-          py-5
-          flex flex-col sm:flex-row
-          items-center justify-between
-          gap-3
-          text-sm
-          text-sky-900/60
-          backdrop-blur-sm
-        "
-      >
-        <div>© {new Date().getFullYear()} Shercosta. All rights reserved.</div>
+      {/* Bottom */}
+      <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center justify-between gap-3 border-t border-primary/10 pt-6 text-center text-sm text-muted-foreground md:flex-row">
+        <p>© {new Date().getFullYear()} Moira. All rights reserved.</p>
 
-        <div className="flex gap-3">
-          <a
-            href="mailto:haventripid@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-            transition-all duration-300
-            hover:text-sky-950
-            hover:-translate-y-0.5
-          "
-          >
-            haventripid@gmail.com ↗
-          </a>
-          <a
-            href="https://instagram.com/haventripid"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-            transition-all duration-300
-            hover:text-sky-950
-            hover:-translate-y-0.5
-          "
-          >
-            Instagram ↗
-          </a>
-        </div>
+        <p>Turning ideas into reliable digital solutions.</p>
       </div>
     </footer>
   );

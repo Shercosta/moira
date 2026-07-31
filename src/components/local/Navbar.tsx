@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
-import { constructWhatsappChatAndOpen } from "../../lib/common";
+import { constructWhatsappChatAndOpen, idNavigator } from "../../lib/common";
 import { MoiraText } from "./Moira-Text";
 
-const navItems = ["Home", "About Us", "Services", "FAQ"];
+const navItems = [
+  { label: "Home", id: "home" },
+  { label: "About Us", id: "team" },
+  { label: "Services", id: "quickAccessCategories" },
+  { label: "FAQ", id: "faq" },
+];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,8 +26,13 @@ export function Navbar() {
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-2 md:w-120 justify-between">
           {navItems.map((item) => (
-            <Button variant={"none"} className="font-normal btn-joe" key={item}>
-              {item}
+            <Button
+              variant={"none"}
+              className="font-normal btn-joe"
+              key={item.id}
+              onClick={() => idNavigator(item.id)}
+            >
+              {item.label}
             </Button>
           ))}
         </div>
@@ -50,8 +60,13 @@ export function Navbar() {
         <div className="absolute top-full left-0 w-full mt-4 md:hidden bg-background p-4 rounded-xl transition-all duration-300 z-50">
           <div className="flex flex-col gap-2">
             {navItems.map((item) => (
-              <Button variant={"none"} className="font-normal" key={item}>
-                {item}
+              <Button
+                variant={"none"}
+                className="font-normal"
+                key={item.id}
+                onClick={() => idNavigator(item.id)}
+              >
+                {item.label}
               </Button>
             ))}
             <Button variant={"secondary"} className="text-text-light font-thin">

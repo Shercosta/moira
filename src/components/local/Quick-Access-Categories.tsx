@@ -1,23 +1,57 @@
 import { Rocket } from "lucide-react";
 import { Button } from "../ui/button";
+import type { JSX } from "react";
 
-function QuickAccessBox() {
+interface QACProps {
+  icon: JSX.Element;
+  h4: string;
+  p: string;
+  buttonText?: string;
+}
+
+const qacs: QACProps[] = [
+  {
+    icon: <Rocket size={20} />,
+    h4: "Lorem, ipsum dolor",
+    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
+    buttonText: "Lorem ipsum dolor",
+  },
+  {
+    icon: <Rocket size={20} />,
+    h4: "Lorem, ipsum dolor",
+    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
+    buttonText: "Lorem ipsum dolor",
+  },
+  {
+    icon: <Rocket size={20} />,
+    h4: "Lorem, ipsum dolor",
+    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
+    buttonText: "Lorem ipsum dolor",
+  },
+  {
+    icon: <Rocket size={20} />,
+    h4: "Lorem, ipsum dolor",
+    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
+    buttonText: "Lorem ipsum dolor",
+  },
+];
+
+function QuickAccessBox(props: QACProps) {
   return (
     <div className="w-full rounded-xl bg-white p-5 shadow-sm">
       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
-        <Rocket size={20} />
+        {props.icon}
       </div>
 
-      <h4 className="mt-4 text-lg font-medium">Accounts & Improvements</h4>
+      <h4 className="mt-4 text-lg font-medium">{props.h4}</h4>
 
-      <p className="mt-2 text-sm text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-        fugit.
-      </p>
+      <p className="mt-2 text-sm text-muted-foreground">{props.p}</p>
 
-      <Button className="mt-5 rounded-full px-6 font-thin">
-        Explore Our Support
-      </Button>
+      {props.buttonText && (
+        <Button className="mt-5 rounded-full px-6 font-thin">
+          {props.buttonText}
+        </Button>
+      )}
     </div>
   );
 }
@@ -35,10 +69,9 @@ export function QuickAccessCategories() {
         </h3>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <QuickAccessBox />
-          <QuickAccessBox />
-          <QuickAccessBox />
-          <QuickAccessBox />
+          {qacs.map((qac, qacX) => (
+            <QuickAccessBox key={qacX} {...qac} />
+          ))}
         </div>
       </div>
     </section>

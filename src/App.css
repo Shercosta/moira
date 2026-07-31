@@ -250,3 +250,11 @@
   transition-delay: 0.4s;
   color: aliceblue;
 }
+
+.bg-subtle-dark {
+  background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/dark-bg.png");
+}
+
+.bg-subtle-light {
+  background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/light-bg.png");
+}

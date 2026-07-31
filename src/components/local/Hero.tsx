@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 
-function HeroPersonPicture({
+function CirclePicture({
   imgPath,
   className,
 }: {
@@ -28,15 +28,15 @@ export function Hero() {
     >
       {/* Left decorations (desktop only) */}
       <div className="relative hidden md:block">
-        <HeroPersonPicture
+        <CirclePicture
           imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
           className="absolute right-20 w-20"
         />
-        <HeroPersonPicture
+        <CirclePicture
           imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
           className="absolute top-35 right-40 w-16"
         />
-        <HeroPersonPicture
+        <CirclePicture
           imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
           className="absolute top-55 right-10 w-13"
         />
@@ -67,15 +67,15 @@ export function Hero() {
 
       {/* Right decorations (desktop only) */}
       <div className="relative hidden md:block">
-        <HeroPersonPicture
+        <CirclePicture
           imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
           className="absolute left-20 w-20"
         />
-        <HeroPersonPicture
+        <CirclePicture
           imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
           className="absolute top-35 left-40 w-16"
         />
-        <HeroPersonPicture
+        <CirclePicture
           imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
           className="absolute top-55 left-10 w-13"
         />

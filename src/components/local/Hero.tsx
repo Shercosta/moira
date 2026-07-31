@@ -13,7 +13,7 @@ function CirclePicture({
       src={imgPath}
       alt={imgPath}
       className={cn([
-        "aspect-square rounded-full object-fill max-w-25",
+        "aspect-square rounded-full object-cover object-top max-w-25",
         className,
       ])}
     />
@@ -29,15 +29,15 @@ export function Hero() {
       {/* Left decorations (desktop only) */}
       <div className="relative hidden md:block">
         <CirclePicture
-          imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
+          imgPath="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
           className="absolute right-20 w-20"
         />
         <CirclePicture
-          imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
+          imgPath="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRavM5p8t8RSx8tNIoFuYIKAhOXLy4mGMDflFAwQgG25DkT9PVnflZJbzj1&s=10"
           className="absolute top-35 right-40 w-16"
         />
         <CirclePicture
-          imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
+          imgPath="https://www.bee.id/wp-content/uploads/2024/05/Hanifa-Ambadar.jpeg"
           className="absolute top-55 right-10 w-13"
         />
       </div>
@@ -68,7 +68,7 @@ export function Hero() {
       {/* Right decorations (desktop only) */}
       <div className="relative hidden md:block">
         <CirclePicture
-          imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
+          imgPath="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI5kWoqt8pXInTZRZhM8XlTq24K1lqrYX2T_SBCbzBC_bdYN7_wwHTIw4&s=10"
           className="absolute left-20 w-20"
         />
         <CirclePicture
@@ -76,7 +76,7 @@ export function Hero() {
           className="absolute top-35 left-40 w-16"
         />
         <CirclePicture
-          imgPath="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/hero-person-1.jpg"
+          imgPath="https://thumbs.dreamstime.com/b/asian-business-woman-smiling-middle-aged-over-white-background-79562683.jpg"
           className="absolute top-55 left-10 w-13"
         />
       </div>

@@ -93,9 +93,22 @@ export function TeamCarousel({ data }: { data: Member[] }) {
       </div>
 
       {/* Arrows */}
-      <div className="flex justify-around lg:justify-center text-muted mt-7 gap-x-10">
-        <ArrowLeft />
-        <ArrowRight />
+      <div className="mt-7 flex justify-around gap-x-10 text-muted lg:justify-center">
+        <button
+          onClick={() => emblaApi?.scrollPrev()}
+          className="rounded-full p-2 transition hover:bg-white/10"
+          aria-label="Previous"
+        >
+          <ArrowLeft />
+        </button>
+
+        <button
+          onClick={() => emblaApi?.scrollNext()}
+          className="rounded-full p-2 transition hover:bg-white/10"
+          aria-label="Next"
+        >
+          <ArrowRight />
+        </button>
       </div>
 
       <div className="flex mx-auto max-w-[80%] lg:max-w-[30%] mt-8">

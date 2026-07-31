@@ -12,23 +12,23 @@ type Member = {
 const TeamMembers: Member[] = [
   {
     imageUrl:
-      "https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg",
-    caption: "Person 1",
+      "https://media.licdn.com/dms/image/v2/D5603AQHWDJlZ5g_bxw/profile-displayphoto-shrink_400_400/B56ZTO047LGoAo-/0/1738636759485?e=1787184000&v=beta&t=nAB2PcXyk81lSNJ9lvUq40-hMJLno8LMfZKyzPl0Eh4",
+    caption: "Geizka Rozilia Ruicosta",
   },
   {
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRavM5p8t8RSx8tNIoFuYIKAhOXLy4mGMDflFAwQgG25DkT9PVnflZJbzj1&s=10",
-    caption: "Person 2",
+      "https://media.licdn.com/dms/image/v2/D5603AQHKyobMoj2PrQ/profile-displayphoto-shrink_800_800/B56ZTPIMZSGoAc-/0/1738641819645?e=1787184000&v=beta&t=ue-bFuQbGNRv-TFRmCH7COSAaYovvsB85OKy-aLGNlU",
+    caption: "Meisya Amanda Aldi",
   },
   {
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTxoJOzDhj-8nkfEfAibh9ZBeMDnUplrTgTBnScLo39A&s=10",
-    caption: "Person 3",
+      "https://media.licdn.com/dms/image/v2/D5603AQH7rSaekcyQsA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729880492067?e=1787184000&v=beta&t=oPACBuVZ7zyEdCgeH4mUvxk1eov3gLMS7UURBQuoEeQ",
+    caption: "Muhammad Ridwan Ramadhan",
   },
   {
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ12u4IvjDG4jXP3Ope-Iw_gTLKwFu_LTnfMFLtwwrdYkKnCxD17bnvlec&s=10",
-    caption: "Person 4",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/zul-reconstruct.jpg",
+    caption: "Zulfian Fachru Reza",
   },
   {
     imageUrl:

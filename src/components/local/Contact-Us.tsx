@@ -1,3 +1,4 @@
+import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 
@@ -70,6 +71,10 @@ export function ContactUs() {
           <div className="flex flex-wrap items-center gap-2">
             <SpanContact text="to get things started." />
           </div>
+
+          <Button className="rounded-full px-6 font-thin" size={"sm"}>
+            Submit
+          </Button>
         </div>
       </div>
     </section>

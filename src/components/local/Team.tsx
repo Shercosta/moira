@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 import useEmblaCarousel from "embla-carousel-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Button } from "../ui/button";
 
 type Member = {
   imageUrl: string;
@@ -88,6 +90,24 @@ export function TeamCarousel({ data }: { data: Member[] }) {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Arrows */}
+      <div className="flex justify-around lg:justify-center text-muted mt-7 gap-x-10">
+        <ArrowLeft />
+        <ArrowRight />
+      </div>
+
+      <div className="flex mx-auto max-w-[80%] lg:max-w-[30%] mt-8">
+        <p className="text-center text-text-light font-thin text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente
+          fugiat distinctio cum labore quibusdam cumque asperiores ex
+          reprehenderit ullam.
+        </p>
+      </div>
+
+      <div className="flex justify-center mt-5">
+        <Button className="rounded-full px-6 font-thin">Check Our Team</Button>
       </div>
     </div>
   );

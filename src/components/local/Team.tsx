@@ -27,18 +27,18 @@ const TeamMembers: Member[] = [
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/zul-reconstruct.jpg",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/zul-reconstruct.png",
     caption: "Zulfian Fachru Reza",
   },
   {
     imageUrl:
-      "https://t4.ftcdn.net/jpg/05/23/62/91/360_F_523629123_RpAModBJXgCTPfilfYaCIbPaalFIjbvv.jpg",
-    caption: "Person 5",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/dery.jpeg",
+    caption: "Dery Yulian Sarean",
   },
   {
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-emeGnpTpd6K_O3l6EzM7asbcuVZeEgD7-ueuNoHnw&s=10",
-    caption: "Person 6",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/jiro.jpg",
+    caption: "Ahmad Sarjono Aljiro",
   },
 ];
 

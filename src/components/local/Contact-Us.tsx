@@ -13,7 +13,7 @@ function SpanContact({ text }: { text: string }) {
 function FormInputContact({ placeholder }: { placeholder: string }) {
   return (
     <Input
-      className="min-w-[160px] flex-1 rounded-full border-none bg-surface text-accent"
+      className="min-w-[160px] flex-1 rounded-full border-none bg-black/5 text-accent"
       placeholder={placeholder}
     />
   );
@@ -59,7 +59,7 @@ export function ContactUs() {
           </div>
 
           <Textarea
-            className="min-h-[140px] border-none bg-surface text-accent"
+            className="min-h-[140px] border-none bg-black/5 text-accent"
             placeholder="State your questions here"
           />
 

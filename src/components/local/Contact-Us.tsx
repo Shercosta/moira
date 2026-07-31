@@ -30,7 +30,7 @@ export function ContactUs() {
             Reach Out Your Way
           </p>
 
-          <p className="mt-4 max-w-md text-sm text-muted-foreground">
+          <p className="mt-4 max-w-md lg:max-w-[65%] text-sm text-muted-foreground">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos,
             perferendis!
           </p>

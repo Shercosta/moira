@@ -12,13 +12,13 @@ type Member = {
 const TeamMembers: Member[] = [
   {
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQHWDJlZ5g_bxw/profile-displayphoto-shrink_400_400/B56ZTO047LGoAo-/0/1738636759485?e=1787184000&v=beta&t=nAB2PcXyk81lSNJ9lvUq40-hMJLno8LMfZKyzPl0Eh4",
-    caption: "Geizka Rozilia Ruicosta",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/zul-reconstruct.png",
+    caption: "Zulfian Fachru Reza",
   },
   {
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQHKyobMoj2PrQ/profile-displayphoto-shrink_800_800/B56ZTPIMZSGoAc-/0/1738641819645?e=1787184000&v=beta&t=ue-bFuQbGNRv-TFRmCH7COSAaYovvsB85OKy-aLGNlU",
-    caption: "Meisya Amanda Aldi",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/jiro.jpg",
+    caption: "Ahmad Sarjono Aljiro",
   },
   {
     imageUrl:
@@ -27,18 +27,18 @@ const TeamMembers: Member[] = [
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/zul-reconstruct.png",
-    caption: "Zulfian Fachru Reza",
-  },
-  {
-    imageUrl:
       "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/dery.jpeg",
     caption: "Dery Yulian Sarean",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/jiro.jpg",
-    caption: "Ahmad Sarjono Aljiro",
+      "https://media.licdn.com/dms/image/v2/D5603AQHWDJlZ5g_bxw/profile-displayphoto-shrink_400_400/B56ZTO047LGoAo-/0/1738636759485?e=1787184000&v=beta&t=nAB2PcXyk81lSNJ9lvUq40-hMJLno8LMfZKyzPl0Eh4",
+    caption: "Geizka Rozilia Ruicosta",
+  },
+  {
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/D5603AQHKyobMoj2PrQ/profile-displayphoto-shrink_800_800/B56ZTPIMZSGoAc-/0/1738641819645?e=1787184000&v=beta&t=ue-bFuQbGNRv-TFRmCH7COSAaYovvsB85OKy-aLGNlU",
+    caption: "Meisya Amanda Aldi",
   },
 ];
 

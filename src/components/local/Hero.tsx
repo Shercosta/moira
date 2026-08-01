@@ -46,21 +46,21 @@ export function Hero() {
       <div className="w-full md:w-[50%]">
         <div className="mb-4">
           <h1 className="text-center text-4xl font-normal capitalize text-primary md:text-5xl">
-            Lorem ipsum dolor sit amet consectetur
+            Your Business Journey Deserves Expert Support
           </h1>
         </div>
 
         <div className="mx-auto max-w-full md:max-w-[70%]">
           <p className="text-center text-sm leading-7 text-primary md:text-base">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-            quidem culpa iste repellat blanditiis quos reiciendis fugiat.
-            Expedita, nam assumenda.
+            Whether you're launching a new product, modernizing existing
+            systems, or simply have a question, our team is ready to deliver
+            reliable technology solutions tailored to your goals.
           </p>
         </div>
 
         <div className="mt-8 flex justify-center md:mt-10">
           <Button className="rounded-full px-6 font-thin md:px-5">
-            Lorem ipsum dolor
+            Explore Our Support
           </Button>
         </div>
       </div>

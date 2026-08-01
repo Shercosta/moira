@@ -6,7 +6,10 @@ import { idNavigator } from "@/lib/common";
 
 export function Footer() {
   return (
-    <footer id="footer" className="bg-subtle-light px-5 py-12 md:px-8 lg:px-16">
+    <footer
+      id="footer"
+      className="bg-subtle-light px-5 py-12 md:px-8 lg:px-16 bg-top"
+    >
       <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 lg:grid-cols-3">
         {/* Brand */}
         <div>

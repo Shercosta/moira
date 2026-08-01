@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Button } from "../ui/button";
 import type { JSX } from "react";
+import { useBetterNavigate } from "@/lib/common";
 
 export interface QACProps {
   icon?: JSX.Element;
@@ -126,6 +127,7 @@ const qacs: QACProps[] = [
 ];
 
 function QuickAccessBox(props: QACProps) {
+  const navigate = useBetterNavigate();
   return (
     <div className="w-full rounded-xl bg-white p-5 shadow-sm">
       {props.icon && (
@@ -138,7 +140,10 @@ function QuickAccessBox(props: QACProps) {
 
       <p className="mt-2 text-sm text-muted-foreground">{props.p}</p>
 
-      <Button className="mt-5 rounded-full px-6 font-thin">
+      <Button
+        className="mt-5 rounded-full px-6 font-thin"
+        onClick={() => navigate("/services")}
+      >
         Explore Our Service
       </Button>
     </div>

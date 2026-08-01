@@ -4,10 +4,11 @@ import { Menu } from "lucide-react";
 import { constructWhatsappChatAndOpen, idNavigator } from "../../lib/common";
 import { MoiraText } from "./Moira-Text";
 
-const navItems = [
-  { label: "Home", id: "home" },
-  { label: "About Us", id: "team" },
+export const navItems = [
+  { label: "Home", id: "hero" },
+  // { label: "About Us", id: "team" },
   { label: "Services", id: "quickAccessCategories" },
+  { label: "Contact Us", id: "contactUs" },
   { label: "FAQ", id: "faq" },
 ];
 

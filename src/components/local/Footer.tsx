@@ -1,6 +1,8 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { Mail, Phone } from "lucide-react";
 import { MoiraText } from "./Moira-Text";
+import { navItems } from "./Navbar";
+import { idNavigator } from "@/lib/common";
 
 export function Footer() {
   return (
@@ -21,29 +23,16 @@ export function Footer() {
           <h3 className="mb-4 font-semibold text-primary">Navigation</h3>
 
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li>
-              <a href="#hero" className="hover:text-primary">
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a href="#services" className="hover:text-primary">
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a href="#about" className="hover:text-primary">
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a href="#contactUs" className="hover:text-primary">
-                Contact
-              </a>
-            </li>
+            {navItems.map((navitem) => (
+              <li key={navitem.id}>
+                <a
+                  onClick={() => idNavigator(navitem.id)}
+                  className="hover:text-primary cursor-pointer"
+                >
+                  {navitem.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 

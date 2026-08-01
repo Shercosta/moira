@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import { CloudCog, Code2, Lightbulb, Wrench } from "lucide-react";
 import { Button } from "../ui/button";
 import type { JSX } from "react";
 
@@ -11,28 +11,28 @@ interface QACProps {
 
 const qacs: QACProps[] = [
   {
-    icon: <Rocket size={20} />,
-    h4: "Lorem, ipsum dolor",
-    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
-    buttonText: "Lorem ipsum dolor",
+    icon: <Code2 size={20} />,
+    h4: "Custom Software",
+    p: "We build scalable web, mobile, and enterprise applications designed specifically for your business objectives.",
+    buttonText: "Explore Our Support",
   },
   {
-    icon: <Rocket size={20} />,
-    h4: "Lorem, ipsum dolor",
-    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
-    buttonText: "Lorem ipsum dolor",
+    icon: <Lightbulb size={20} />,
+    h4: "IT Consulting",
+    p: "Work with experienced professionals to plan, architect, and execute successful technology projects.",
+    buttonText: "Explore Our Support",
   },
   {
-    icon: <Rocket size={20} />,
-    h4: "Lorem, ipsum dolor",
-    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
-    buttonText: "Lorem ipsum dolor",
+    icon: <CloudCog size={20} />,
+    h4: "Cloud & Infrastructure",
+    p: "Deploy secure, scalable solutions using modern cloud platforms and infrastructure best practices.",
+    buttonText: "Explore Our Support",
   },
   {
-    icon: <Rocket size={20} />,
-    h4: "Lorem, ipsum dolor",
-    p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, optio.",
-    buttonText: "Lorem ipsum dolor",
+    icon: <Wrench size={20} />,
+    h4: "Support & Optimization",
+    p: "Receive continuous maintenance, performance improvements, monitoring, and technical assistance.",
+    buttonText: "Explore Our Support",
   },
 ];
 

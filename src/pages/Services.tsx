@@ -90,7 +90,7 @@ const services: ServiceProps[] = [
     subtitle: "Continuous Improvement",
     p: "Receive continuous maintenance, performance improvements, monitoring, and technical assistance.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/3.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/3.jpg",
     deliverables: [
       "Performance Tuning",
       "System Monitoring",

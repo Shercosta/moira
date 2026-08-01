@@ -47,7 +47,8 @@ const services: ServiceProps[] = [
     h4: "Custom Software",
     subtitle: "Tailored Digital Solutions",
     p: "We build scalable web, mobile, and enterprise applications designed specifically for your business objectives.",
-    image: "https://picsum.photos/900/700?1",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/1.webp",
     deliverables: [
       "Custom Business Systems",
       "Enterprise Applications",

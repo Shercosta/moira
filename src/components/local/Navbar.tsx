@@ -3,6 +3,8 @@ import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import { constructWhatsappChatAndOpen, idNavigator } from "../../lib/common";
 import { MoiraText } from "./Moira-Text";
+import { cn } from "@/lib/utils";
+import { FaWhatsapp } from "react-icons/fa6";
 
 export const navItems = [
   { label: "Home", id: "hero" },
@@ -16,7 +18,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full relative mb-10">
+    <nav className={cn(["w-full relative mb-10"])}>
       {/* Top bar */}
       <div className="flex items-center justify-between mx-8 my-4">
         {/* Logo */}
@@ -46,7 +48,8 @@ export function Navbar() {
               constructWhatsappChatAndOpen({});
             }}
           >
-            Contact Us
+            <FaWhatsapp />
+            <span>Say Hi</span>
           </Button>
         </div>
 
@@ -57,25 +60,43 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="absolute top-full left-0 w-full mt-4 md:hidden bg-background p-4 rounded-xl transition-all duration-300 z-50">
-          <div className="flex flex-col gap-2">
-            {navItems.map((item) => (
-              <Button
-                variant={"none"}
-                className="font-normal"
-                key={item.id}
-                onClick={() => idNavigator(item.id)}
-              >
-                {item.label}
-              </Button>
-            ))}
-            <Button variant={"secondary"} className="text-text-light font-thin">
-              Contact Us
+      <div
+        className={cn(
+          "absolute top-full left-0 w-full mt-4 md:hidden bg-subtle-light p-4 rounded-xl z-50",
+          "transition-all duration-300 ease-in-out",
+          open
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none",
+        )}
+      >
+        <div className="flex flex-col gap-2">
+          {navItems.map((item) => (
+            <Button
+              variant="none"
+              className="font-normal"
+              key={item.id}
+              onClick={() => {
+                idNavigator(item.id);
+                setOpen(false);
+              }}
+            >
+              {item.label}
             </Button>
-          </div>
+          ))}
+
+          <Button
+            variant="secondary"
+            className="text-text-light font-thin"
+            onClick={() => {
+              constructWhatsappChatAndOpen({});
+              setOpen(false);
+            }}
+          >
+            <FaWhatsapp />
+            <span>Say Hi</span>
+          </Button>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

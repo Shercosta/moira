@@ -3,7 +3,6 @@ import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import {
   constructWhatsappChatAndOpen,
-  idNavigator,
   useBetterNavigate,
 } from "../../lib/common";
 import { MoiraText } from "./Moira-Text";
@@ -13,7 +12,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 export const navItems = [
   { label: "Home", id: "hero", route: "/" },
   // { label: "About Us", id: "team", route:"/" },
-  { label: "Services", id: "quickAccessCategories", route: "/" },
+  { label: "Services", id: null, route: "/services" },
   { label: "Contact Us", id: "contactUs", route: "/" },
   { label: "FAQ", id: "faq", route: "/" },
 ];
@@ -81,7 +80,7 @@ export function Navbar() {
               className="font-normal"
               key={item.id}
               onClick={() => {
-                idNavigator(item.id);
+                navigate(item.route, item.id);
                 setOpen(false);
               }}
             >

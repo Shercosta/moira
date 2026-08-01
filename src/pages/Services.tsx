@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
+import { useBetterNavigate } from "@/lib/common";
 
 interface ProcessStep {
   title: string;
@@ -253,6 +254,8 @@ const services: ServiceProps[] = [
 ];
 
 export default function ServicesPage() {
+  const navigate = useBetterNavigate();
+
   return (
     <main className="bg-background text-primary">
       {/* Hero */}
@@ -433,7 +436,11 @@ export default function ServicesPage() {
             system, we'd love to help turn your ideas into reliable software.
           </p>
 
-          <Button size="lg" className="rounded-full px-6 font-thin md:px-5">
+          <Button
+            size="lg"
+            className="rounded-full px-6 font-thin md:px-5"
+            onClick={() => navigate("/", "contactUs")}
+          >
             Contact Us
           </Button>
         </div>

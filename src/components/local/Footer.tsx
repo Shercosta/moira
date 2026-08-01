@@ -2,9 +2,10 @@
 import { Mail, Phone } from "lucide-react";
 import { MoiraText } from "./Moira-Text";
 import { navItems } from "./Navbar";
-import { idNavigator } from "@/lib/common";
+import { useBetterNavigate } from "@/lib/common";
 
 export function Footer() {
+  const navigate = useBetterNavigate();
   return (
     <footer
       id="footer"
@@ -29,7 +30,7 @@ export function Footer() {
             {navItems.map((navitem) => (
               <li key={navitem.id}>
                 <a
-                  onClick={() => idNavigator(navitem.id)}
+                  onClick={() => navigate(navitem.route, navitem.id)}
                   className="hover:text-primary cursor-pointer"
                 >
                   {navitem.label}

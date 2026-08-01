@@ -113,9 +113,10 @@ export function TeamCarousel({ data }: { data: Member[] }) {
 
       <div className="flex mx-auto max-w-[80%] lg:max-w-[30%] mt-8">
         <p className="text-center text-text-light font-thin text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente
-          fugiat distinctio cum labore quibusdam cumque asperiores ex
-          reprehenderit ullam.
+          Trusted by organizations across finance, healthcare, media, and
+          infrastructure, our team has contributed to software projects for
+          industry leaders while collaborating with partners throughout Asia and
+          beyond.
         </p>
       </div>
 

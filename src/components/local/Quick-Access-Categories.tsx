@@ -19,8 +19,8 @@ import {
 import { Button } from "../ui/button";
 import type { JSX } from "react";
 
-interface QACProps {
-  icon: JSX.Element;
+export interface QACProps {
+  icon?: JSX.Element;
   h4: string;
   p: string;
   isQuickAccess: boolean;
@@ -128,9 +128,11 @@ const qacs: QACProps[] = [
 function QuickAccessBox(props: QACProps) {
   return (
     <div className="w-full rounded-xl bg-white p-5 shadow-sm">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
-        {props.icon}
-      </div>
+      {props.icon && (
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
+          {props.icon}
+        </div>
+      )}
 
       <h4 className="mt-4 text-lg font-medium">{props.h4}</h4>
 

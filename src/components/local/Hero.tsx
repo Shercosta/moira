@@ -60,7 +60,7 @@ export function Hero() {
 
         <div className="mt-8 flex justify-center md:mt-10">
           <Button className="rounded-full px-6 font-thin md:px-5">
-            Explore Our Support
+            Explore Our Service
           </Button>
         </div>
       </div>

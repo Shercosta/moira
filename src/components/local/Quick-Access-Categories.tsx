@@ -6,7 +6,6 @@ interface QACProps {
   icon: JSX.Element;
   h4: string;
   p: string;
-  buttonText?: string;
 }
 
 const qacs: QACProps[] = [
@@ -14,25 +13,21 @@ const qacs: QACProps[] = [
     icon: <Code2 size={20} />,
     h4: "Custom Software",
     p: "We build scalable web, mobile, and enterprise applications designed specifically for your business objectives.",
-    buttonText: "Explore Our Support",
   },
   {
     icon: <Lightbulb size={20} />,
     h4: "IT Consulting",
     p: "Work with experienced professionals to plan, architect, and execute successful technology projects.",
-    buttonText: "Explore Our Support",
   },
   {
     icon: <CloudCog size={20} />,
     h4: "Cloud & Infrastructure",
     p: "Deploy secure, scalable solutions using modern cloud platforms and infrastructure best practices.",
-    buttonText: "Explore Our Support",
   },
   {
     icon: <Wrench size={20} />,
     h4: "Support & Optimization",
     p: "Receive continuous maintenance, performance improvements, monitoring, and technical assistance.",
-    buttonText: "Explore Our Support",
   },
 ];
 
@@ -47,11 +42,9 @@ function QuickAccessBox(props: QACProps) {
 
       <p className="mt-2 text-sm text-muted-foreground">{props.p}</p>
 
-      {props.buttonText && (
-        <Button className="mt-5 rounded-full px-6 font-thin">
-          {props.buttonText}
-        </Button>
-      )}
+      <Button className="mt-5 rounded-full px-6 font-thin">
+        Explore Our Service
+      </Button>
     </div>
   );
 }

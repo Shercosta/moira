@@ -1,21 +1,26 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
-import { constructWhatsappChatAndOpen, idNavigator } from "../../lib/common";
+import {
+  constructWhatsappChatAndOpen,
+  idNavigator,
+  useBetterNavigate,
+} from "../../lib/common";
 import { MoiraText } from "./Moira-Text";
 import { cn } from "@/lib/utils";
 import { FaWhatsapp } from "react-icons/fa6";
 
 export const navItems = [
-  { label: "Home", id: "hero" },
-  // { label: "About Us", id: "team" },
-  { label: "Services", id: "quickAccessCategories" },
-  { label: "Contact Us", id: "contactUs" },
-  { label: "FAQ", id: "faq" },
+  { label: "Home", id: "hero", route: "/" },
+  // { label: "About Us", id: "team", route:"/" },
+  { label: "Services", id: "quickAccessCategories", route: "/" },
+  { label: "Contact Us", id: "contactUs", route: "/" },
+  { label: "FAQ", id: "faq", route: "/" },
 ];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useBetterNavigate();
 
   return (
     <nav className={cn(["w-full relative mb-10"])}>
@@ -33,7 +38,7 @@ export function Navbar() {
               variant={"none"}
               className="font-normal btn-joe"
               key={item.id}
-              onClick={() => idNavigator(item.id)}
+              onClick={() => navigate(item.route, item.id)}
             >
               {item.label}
             </Button>

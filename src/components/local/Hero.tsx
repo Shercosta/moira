@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
+import { useNavigateAndScroll } from "@/lib/common";
 
 function CirclePicture({
   imgPath,
@@ -21,6 +22,8 @@ function CirclePicture({
 }
 
 export function Hero() {
+  const navscroll = useNavigateAndScroll();
+
   return (
     <section
       id="hero"
@@ -59,7 +62,10 @@ export function Hero() {
         </div>
 
         <div className="mt-8 flex justify-center md:mt-10">
-          <Button className="rounded-full px-6 font-thin md:px-5">
+          <Button
+            className="rounded-full px-6 font-thin md:px-5 cursor-pointer"
+            onClick={() => navscroll("/services")}
+          >
             Explore Our Service
           </Button>
         </div>

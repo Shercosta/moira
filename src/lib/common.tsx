@@ -52,6 +52,26 @@ export function useNavigateAndScroll() {
   };
 }
 
+export function useBetterNavigate() {
+  const navigate = useNavigate();
+
+  return (path?: string | null, id?: string | null) => {
+    if (path) {
+      navigate(path);
+    }
+    if (id) {
+      setTimeout(() => {
+        idNavigator(id);
+      }, 300);
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+}
+
 export interface WaLinkProps {
   phoneNumber?: string;
   message?: string;

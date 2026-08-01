@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+// import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { Mail, Phone } from "lucide-react";
 import { MoiraText } from "./Moira-Text";
 import { navItems } from "./Navbar";
@@ -7,7 +7,7 @@ import { idNavigator } from "@/lib/common";
 export function Footer() {
   return (
     <footer id="footer" className="bg-subtle-light px-5 py-12 md:px-8 lg:px-16">
-      <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 lg:grid-cols-3">
         {/* Brand */}
         <div>
           <MoiraText className="text-5xl font-bold tracking-tight text-primary transition-all duration-300 hover:scale-105 hover:text-secondary" />
@@ -60,7 +60,7 @@ export function Footer() {
         </div>
 
         {/* Social */}
-        <div>
+        {/* <div>
           <h3 className="mb-4 font-semibold text-primary">Follow Us</h3>
 
           <div className="flex gap-4">
@@ -89,7 +89,7 @@ export function Footer() {
           <p className="mt-5 text-sm text-muted-foreground">
             Stay connected and follow our latest updates.
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom */}

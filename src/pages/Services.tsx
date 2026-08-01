@@ -61,7 +61,8 @@ const services: ServiceProps[] = [
     h4: "IT Consulting",
     subtitle: "Technology Strategy & Planning",
     p: "Work with experienced professionals to plan, architect, and execute successful technology projects.",
-    image: "https://picsum.photos/900/700?2",
+    image:
+      "https://amalgamated.co.id/wp-content/uploads/2024/02/Desk-Workers_AZR5652-Edit.jpeg",
     deliverables: [
       "Solution Architecture",
       "Technology Assessment",
@@ -74,7 +75,8 @@ const services: ServiceProps[] = [
     h4: "Cloud & Infrastructure",
     subtitle: "Scalable Cloud Solutions",
     p: "Deploy secure, scalable solutions using modern cloud platforms and infrastructure best practices.",
-    image: "https://picsum.photos/900/700?3",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/2.webp",
     deliverables: [
       "Cloud Deployment",
       "Infrastructure Setup",
@@ -87,7 +89,8 @@ const services: ServiceProps[] = [
     h4: "Support & Optimization",
     subtitle: "Continuous Improvement",
     p: "Receive continuous maintenance, performance improvements, monitoring, and technical assistance.",
-    image: "https://picsum.photos/900/700?4",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/3.webp",
     deliverables: [
       "Performance Tuning",
       "System Monitoring",
@@ -100,7 +103,8 @@ const services: ServiceProps[] = [
     h4: "Website Development",
     subtitle: "Modern Business Websites",
     p: "Create responsive, high-performance websites tailored to showcase your brand and achieve your business goals.",
-    image: "https://picsum.photos/900/700?5",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/4.webp",
     deliverables: [
       "Responsive Website",
       "CMS Integration",
@@ -113,7 +117,8 @@ const services: ServiceProps[] = [
     h4: "Mobile App Development",
     subtitle: "Android & iOS Applications",
     p: "Build intuitive Android and iOS applications with modern technologies for a seamless user experience.",
-    image: "https://picsum.photos/900/700?6",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/5.webp",
     deliverables: [
       "Android App",
       "iOS App",
@@ -126,7 +131,8 @@ const services: ServiceProps[] = [
     h4: "Web Application Development",
     subtitle: "Powerful Web Platforms",
     p: "Develop secure, scalable web applications with custom features designed around your workflow.",
-    image: "https://picsum.photos/900/700?7",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/6.webp",
     deliverables: [
       "Custom Dashboard",
       "Authentication System",
@@ -139,7 +145,8 @@ const services: ServiceProps[] = [
     h4: "Database Design",
     subtitle: "Reliable Data Architecture",
     p: "Design reliable and efficient database structures that support performance, scalability, and data integrity.",
-    image: "https://picsum.photos/900/700?8",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/7.webp",
     deliverables: [
       "Database Schema",
       "Data Modeling",
@@ -152,7 +159,8 @@ const services: ServiceProps[] = [
     h4: "Business Process Automation",
     subtitle: "Smarter Business Workflows",
     p: "Automate repetitive tasks and streamline business operations with custom software solutions.",
-    image: "https://picsum.photos/900/700?9",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/8.webp",
     deliverables: [
       "Workflow Automation",
       "Approval Systems",
@@ -165,7 +173,8 @@ const services: ServiceProps[] = [
     h4: "Backend Development",
     subtitle: "Scalable Server Solutions",
     p: "Develop robust APIs, authentication systems, and server-side architectures that power modern applications.",
-    image: "https://picsum.photos/900/700?10",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/9.webp",
     deliverables: [
       "REST APIs",
       "Authentication",
@@ -178,7 +187,8 @@ const services: ServiceProps[] = [
     h4: "UI/UX Design",
     subtitle: "Design That Users Love",
     p: "Design clean, user-centered interfaces that improve usability and create engaging digital experiences.",
-    image: "https://picsum.photos/900/700?11",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/10.webp",
     deliverables: [
       "Wireframes",
       "UI Mockups",
@@ -191,7 +201,8 @@ const services: ServiceProps[] = [
     h4: "Security & Performance",
     subtitle: "Reliable & Secure Applications",
     p: "Improve application security, optimize performance, and ensure your software follows industry best practices.",
-    image: "https://picsum.photos/900/700?12",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/11.webp",
     deliverables: [
       "Security Audit",
       "Performance Optimization",
@@ -204,7 +215,8 @@ const services: ServiceProps[] = [
     h4: "System Integration",
     subtitle: "Connected Business Systems",
     p: "Connect your applications with third-party services, payment gateways, CRMs, ERPs, and other business tools.",
-    image: "https://picsum.photos/900/700?13",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/12.webp",
     deliverables: [
       "Payment Gateway Integration",
       "CRM Integration",
@@ -217,7 +229,8 @@ const services: ServiceProps[] = [
     h4: "Legacy System Modernization",
     subtitle: "Modernize Existing Software",
     p: "Upgrade existing software with modern technologies while preserving critical business functionality.",
-    image: "https://picsum.photos/900/700?14",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/13.webp",
     deliverables: [
       "Code Refactoring",
       "Technology Migration",
@@ -230,7 +243,8 @@ const services: ServiceProps[] = [
     h4: "Maintenance & Bug Fixes",
     subtitle: "Keep Software Running Smoothly",
     p: "Keep your software stable with regular updates, bug fixes, and ongoing technical support.",
-    image: "https://picsum.photos/900/700?15",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/14.webp",
     deliverables: [
       "Bug Fixes",
       "Version Updates",
@@ -243,7 +257,8 @@ const services: ServiceProps[] = [
     h4: "AI Integration",
     subtitle: "Intelligent Software Features",
     p: "Integrate AI features such as chatbots, document processing, recommendations, and workflow automation into your applications.",
-    image: "https://picsum.photos/900/700?16",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/15.webp",
     deliverables: [
       "AI Chatbots",
       "Document Processing",
@@ -312,7 +327,7 @@ export default function ServicesPage() {
           >
             {/* Image */}
 
-            <div className="overflow-hidden rounded-3xl border border-white/10 bg-slate-900">
+            <div className="overflow-hidden rounded-3xl border border-border">
               <img
                 src={service.image}
                 alt={service.h4}

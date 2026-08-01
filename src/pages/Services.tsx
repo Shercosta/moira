@@ -1,6 +1,39 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
+
+interface ProcessStep {
+  title: string;
+  description: string;
+}
+
+const processSteps: ProcessStep[] = [
+  {
+    title: "Discovery",
+    description:
+      "We begin by understanding your business, goals, users, and technical requirements to define a clear project scope.",
+  },
+  {
+    title: "Planning",
+    description:
+      "Our team designs the solution architecture, selects the right technologies, and creates a practical development roadmap.",
+  },
+  {
+    title: "Development",
+    description:
+      "Using an iterative approach, we build your solution while keeping you informed through regular progress updates.",
+  },
+  {
+    title: "Testing",
+    description:
+      "Every feature is thoroughly tested to ensure functionality, security, performance, and a smooth user experience.",
+  },
+  {
+    title: "Deployment",
+    description:
+      "We deploy your application, assist with the launch, and provide ongoing support to keep your software running reliably.",
+  },
+];
 
 interface ServiceProps extends QACProps {
   subtitle: string;
@@ -221,41 +254,36 @@ const services: ServiceProps[] = [
 
 export default function ServicesPage() {
   return (
-    <main className="bg-[#020617] text-white">
+    <main className="bg-background text-primary">
       {/* Hero */}
 
       <section className="relative overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-cyan-500/20 blur-[120px]" />
+        <div className="absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-accent-500/20 blur-[120px]" />
 
         <div className="container mx-auto px-6 py-28 text-center relative z-10">
-          <p className="text-cyan-400 font-semibold tracking-widest uppercase">
-            Our Services
-          </p>
+          <p className="text-center font-thin text-teal">[ Our Services ]</p>
 
-          <h1 className="mt-6 text-5xl font-bold md:text-6xl">
+          <h1 className="mt-6 text-5xl font-bold md:text-6xl text-muted">
             Software Built Around
-            <span className="text-cyan-400"> Your Business</span>
+            <span className="text-primary"> Your Business</span>
           </h1>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg text-slate-400 leading-8">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-muted">
             We help businesses transform ideas into reliable software solutions
             through modern technologies, thoughtful design, and collaborative
             development.
           </p>
 
-          <Button
-            size="lg"
-            className="mt-10 rounded-full bg-cyan-500 hover:bg-cyan-400"
-          >
+          {/* <Button size="lg" className="mt-10 rounded-full">
             Start Your Project
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          </Button> */}
         </div>
       </section>
 
       {/* Navigation */}
 
-      <section className="sticky top-16 z-20 border-y border-white/10 bg-[#020617]/90 backdrop-blur">
+      {/* <section className="sticky top-16 z-20 border-y border-white/10 bg-[#020617]/90 backdrop-blur">
         <div className="container mx-auto flex gap-3 overflow-auto px-6 py-4">
           {services.map((service) => (
             <button
@@ -266,7 +294,7 @@ export default function ServicesPage() {
             </button>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Services */}
 
@@ -291,15 +319,15 @@ export default function ServicesPage() {
             {/* Content */}
 
             <div>
-              <p className="font-semibold uppercase tracking-widest text-cyan-400">
+              <p className="font-semibold uppercase tracking-widest text-muted">
                 {service.subtitle}
               </p>
 
               <h2 className="mt-3 text-4xl font-bold">{service.h4}</h2>
 
-              <p className="mt-6 leading-8 text-slate-400">{service.p}</p>
+              <p className="mt-6 leading-8 text-muted">{service.p}</p>
 
-              <div className="mt-10 rounded-3xl border border-white/10 bg-slate-900/60 p-6">
+              <div className="mt-10 rounded-3xl bg-surface p-6">
                 <h3 className="mb-5 text-xl font-semibold">
                   Typical Deliverables
                 </h3>
@@ -307,16 +335,16 @@ export default function ServicesPage() {
                 <div className="grid gap-4 sm:grid-cols-2">
                   {service.deliverables.map((item) => (
                     <div key={item} className="flex items-center gap-3">
-                      <CheckCircle2 size={18} className="text-cyan-400" />
+                      <CheckCircle2 size={18} className="text-secondary" />
                       <span>{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <Button className="mt-8 rounded-full bg-cyan-500 hover:bg-cyan-400">
+              {/* <Button className="mt-8 rounded-full bg-cyan-500 hover:bg-cyan-400">
                 Learn More
-              </Button>
+              </Button> */}
             </div>
           </div>
         ))}
@@ -324,35 +352,29 @@ export default function ServicesPage() {
 
       {/* Process */}
 
-      <section className="border-t border-white/10 bg-slate-950">
+      <section className="bg-subtle-dark">
         <div className="container mx-auto px-6 py-24">
           <div className="text-center">
-            <p className="uppercase tracking-widest text-cyan-400">
-              Our Process
-            </p>
+            <p className="font-thin text-muted">[ Our Process ]</p>
 
-            <h2 className="mt-4 text-4xl font-bold">How We Build Software</h2>
+            <h2 className="mt-4 text-4xl font-bold text-text-light">
+              How We Build Software
+            </h2>
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-5">
-            {[
-              "Discovery",
-              "Planning",
-              "Development",
-              "Testing",
-              "Deployment",
-            ].map((step, i) => (
-              <div
-                key={step}
-                className="rounded-3xl border border-white/10 bg-slate-900 p-6"
-              >
-                <div className="text-4xl font-bold text-cyan-400">0{i + 1}</div>
+            {processSteps.map((step, i) => (
+              <div key={step.title} className="rounded-3xl bg-border p-6">
+                <div className="text-4xl font-bold text-teal">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
 
-                <h3 className="mt-6 text-xl font-semibold">{step}</h3>
+                <h3 className="mt-6 text-xl font-semibold text-secondary">
+                  {step.title}
+                </h3>
 
-                <p className="mt-3 text-sm leading-7 text-slate-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem, dignissimos.
+                <p className="mt-3 text-sm leading-7 text-muted">
+                  {step.description}
                 </p>
               </div>
             ))}
@@ -362,7 +384,7 @@ export default function ServicesPage() {
 
       {/* Technologies */}
 
-      <section className="container mx-auto px-6 py-24">
+      {/* <section className="container mx-auto px-6 py-24">
         <div className="text-center">
           <p className="uppercase tracking-widest text-cyan-400">
             Technologies
@@ -396,25 +418,22 @@ export default function ServicesPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
 
-      <section className="px-6 pb-28">
-        <div className="container mx-auto rounded-[40px] border border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-16 text-center">
+      <section className="px-6 py-18">
+        <div className="container mx-auto rounded-[40px] bg-surface p-16 text-center">
           <h2 className="text-4xl font-bold">
             Ready to Build Something Great?
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-slate-400 leading-8">
+          <p className="mx-auto mt-6 max-w-2xl text-muted leading-8">
             Whether you're starting a new project or improving an existing
             system, we'd love to help turn your ideas into reliable software.
           </p>
 
-          <Button
-            size="lg"
-            className="mt-10 rounded-full bg-cyan-500 hover:bg-cyan-400"
-          >
+          <Button size="lg" className="rounded-full px-6 font-thin md:px-5">
             Contact Us
           </Button>
         </div>

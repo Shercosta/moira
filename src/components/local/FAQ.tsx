@@ -14,28 +14,28 @@ interface FAQinterface {
 const faqs: FAQinterface[] = [
   {
     id: 1,
-    q: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    a: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, harum adipisci quaerat iure neque dolores? Cumque quisquam assumenda quibusdam error.",
+    q: "What kind of software do you develop?",
+    a: "We build custom software tailored to your business needs, including web applications, mobile applications, enterprise systems, APIs, system integrations, and other digital solutions.",
   },
   {
     id: 2,
-    q: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    a: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, harum adipisci quaerat iure neque dolores? Cumque quisquam assumenda quibusdam error.",
+    q: "Can you work with our existing development team?",
+    a: "Yes. We can collaborate with your in-house developers, provide dedicated engineers, or handle specific parts of a project while working alongside your existing team.",
   },
   {
     id: 3,
-    q: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    a: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, harum adipisci quaerat iure neque dolores? Cumque quisquam assumenda quibusdam error.",
+    q: "How do you estimate project cost and timeline?",
+    a: "Every project is different. After understanding your requirements, we'll provide an estimate based on the project's scope, complexity, technology stack, and expected delivery timeline.",
   },
   {
     id: 4,
-    q: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    a: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, harum adipisci quaerat iure neque dolores? Cumque quisquam assumenda quibusdam error.",
+    q: "Do you provide maintenance and support after launch?",
+    a: "Yes. We offer post-launch maintenance, bug fixes, performance improvements, feature enhancements, and technical support based on your project's needs.",
   },
   {
     id: 5,
-    q: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    a: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, harum adipisci quaerat iure neque dolores? Cumque quisquam assumenda quibusdam error.",
+    q: "How do we get started?",
+    a: "Simply contact us with your project idea or business challenge. We'll schedule a discussion to understand your requirements and recommend the best approach.",
   },
 ];
 

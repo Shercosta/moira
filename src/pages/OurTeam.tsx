@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { useBetterNavigate } from "@/lib/common";
 import { CheckCircle2 } from "lucide-react";
 
 const industries = [
@@ -74,6 +76,7 @@ const proof = [
 ];
 
 export default function OurTeam() {
+  const navigate = useBetterNavigate();
   return (
     <main className="mx-auto max-w-7xl px-6 py-20 space-y-28">
       {/* HERO */}
@@ -260,6 +263,13 @@ export default function OurTeam() {
         </p>
 
         {/* Button goes here */}
+        <Button
+          size="lg"
+          className="rounded-full px-6 font-thin md:px-5"
+          onClick={() => navigate("/", "contactUs")}
+        >
+          Contact Us
+        </Button>
       </section>
     </main>
   );

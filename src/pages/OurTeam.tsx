@@ -78,7 +78,7 @@ const proof = [
 export default function OurTeam() {
   const navigate = useBetterNavigate();
   return (
-    <main className="mx-auto max-w-7xl px-6 py-20 space-y-28">
+    <main className="mx-auto max-w-7xl px-5 py-12 md:px-8 lg:px-16 lg:py-20 space-y-28">
       {/* HERO */}
 
       <section className="max-w-4xl">

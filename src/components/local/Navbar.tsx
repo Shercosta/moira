@@ -11,9 +11,9 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 export const navItems = [
   { label: "Home", id: "hero", route: "/" },
-  // { label: "About Us", id: "team", route:"/" },
   { label: "Services", id: null, route: "/services" },
-  { label: "Contact Us", id: "contactUs", route: "/" },
+  { label: "Contact", id: "contactUs", route: "/" },
+  // { label: "About", id: null, route: "/team" },
   { label: "FAQ", id: "faq", route: "/" },
 ];
 

@@ -12,6 +12,8 @@ function App() {
   return (
     <div>
       <Navbar />
+      {/* gap to not make navbar overlays the rest of the content */}
+      <div className="h-[100px]" />
 
       <Routes>
         <Route path="/" element={<HomePage />} />

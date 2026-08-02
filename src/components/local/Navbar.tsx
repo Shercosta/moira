@@ -22,7 +22,7 @@ export function Navbar() {
   const navigate = useBetterNavigate();
 
   return (
-    <nav className={cn(["w-full relative mb-10"])}>
+    <nav className={cn(["w-full mb-10", "fixed top-0 bg-white z-50"])}>
       {/* Top bar */}
       <div className="flex items-center justify-between mx-8 my-4">
         {/* Logo */}

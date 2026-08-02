@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
-import { shuffleArray, useBetterNavigate } from "@/lib/common";
+import { useBetterNavigate } from "@/lib/common";
 
 interface ProcessStep {
   title: string;
@@ -318,7 +318,7 @@ export default function ServicesPage() {
       {/* Services */}
 
       <section className="container mx-auto px-6 py-24 space-y-32">
-        {shuffleArray(services).map((service, index) => (
+        {services.map((service, index) => (
           <div
             key={service.h4}
             className={`grid items-center gap-16 lg:grid-cols-2 ${

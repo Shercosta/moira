@@ -6,9 +6,19 @@ interface MoiraTextProps {
 
 export function MoiraText({ className = "" }: MoiraTextProps) {
   const navscroll = useNavigateAndScroll();
+
   return (
-    <div className="flex cursor-pointer" onClick={() => navscroll("/")}>
-      <span className={cn([className])}>Moira</span>
+    <div
+      className={cn("inline-flex items-center gap-2 cursor-pointer", className)}
+      onClick={() => navscroll("/")}
+    >
+      <img
+        src="/moiraicon.png"
+        alt="Moira"
+        className="h-[1em] w-[1em] object-contain"
+      />
+
+      <span>Moira</span>
     </div>
   );
 }

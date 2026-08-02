@@ -186,3 +186,19 @@ export function constructWhatsappChatAndOpen({
   const walink = whatsappLink({ message });
   window.open(walink, "_blank");
 }
+
+export function shuffleArray<T>(array: T[]) {
+  // Create a shallow copy to keep the original array intact
+  const shuffled = [...array];
+
+  // Loop from the last element down to the second element
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    // Pick a random index from 0 to i
+    const j = Math.floor(Math.random() * (i + 1));
+
+    // Swap elements using destructuring assignment
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
+}

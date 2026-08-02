@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
+import { useBetterNavigate } from "@/lib/common";
 
 type Member = {
   imageUrl: string;
@@ -43,6 +44,8 @@ const TeamMembers: Member[] = [
 ];
 
 export function TeamCarousel({ data }: { data: Member[] }) {
+  const navigate = useBetterNavigate();
+
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "center",
     loop: true,
@@ -121,7 +124,12 @@ export function TeamCarousel({ data }: { data: Member[] }) {
       </div>
 
       <div className="flex justify-center mt-5">
-        <Button className="rounded-full px-6 font-thin">Check Our Team</Button>
+        <Button
+          className="rounded-full px-6 font-thin"
+          onClick={() => navigate("/team")}
+        >
+          Check Our Team
+        </Button>
       </div>
     </div>
   );

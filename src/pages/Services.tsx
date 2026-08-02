@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
-import { useBetterNavigate } from "@/lib/common";
+import { shuffleArray, useBetterNavigate } from "@/lib/common";
 
 interface ProcessStep {
   title: string;
@@ -104,7 +104,7 @@ const services: ServiceProps[] = [
     subtitle: "Modern Business Websites",
     p: "Create responsive, high-performance websites tailored to showcase your brand and achieve your business goals.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/4.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/16.webp",
     deliverables: [
       "Responsive Website",
       "CMS Integration",
@@ -280,9 +280,9 @@ export default function ServicesPage() {
         <div className="absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-accent-500/20 blur-[120px]" />
 
         <div className="container mx-auto px-6 py-28 text-center relative z-10">
-          <p className="text-center font-thin text-teal">[ Our Services ]</p>
+          <p className="text-center text-teal">[ Our Services ]</p>
 
-          <h1 className="mt-6 text-5xl font-bold md:text-6xl text-muted">
+          <h1 className="mt-6 text-5xl font-bold md:text-6xl text-teal">
             Software Built Around
             <span className="text-primary"> Your Business</span>
           </h1>
@@ -318,7 +318,7 @@ export default function ServicesPage() {
       {/* Services */}
 
       <section className="container mx-auto px-6 py-24 space-y-32">
-        {services.map((service, index) => (
+        {shuffleArray(services).map((service, index) => (
           <div
             key={service.h4}
             className={`grid items-center gap-16 lg:grid-cols-2 ${
@@ -327,7 +327,7 @@ export default function ServicesPage() {
           >
             {/* Image */}
 
-            <div className="overflow-hidden rounded-3xl border border-border">
+            <div className="overflow-hidden rounded-3xl border border-surface">
               <img
                 src={service.image}
                 alt={service.h4}

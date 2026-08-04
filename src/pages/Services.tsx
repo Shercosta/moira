@@ -132,7 +132,7 @@ export const services: ServiceProps[] = [
     subtitle: "Powerful Web Platforms",
     p: "Develop secure, scalable web applications with custom features designed around your workflow.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/1.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/17.webp",
     deliverables: [
       "Custom Dashboard",
       "Authentication System",

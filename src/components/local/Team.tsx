@@ -137,7 +137,7 @@ export function TeamCarousel({ data }: { data: Member[] }) {
 
 export function Team() {
   return (
-    <section id="team" className="bg-subtle-dark py-12">
+    <section id="team" className="bg-subtle-dark py-12 bg-center">
       <div className="mx-auto">
         <h2 className="text-center font-thin text-muted">
           [ Our Support Team ]

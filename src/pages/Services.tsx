@@ -392,7 +392,7 @@ export default function ServicesPage() {
 
           <Button
             size="lg"
-            className="rounded-full px-6 font-thin md:px-5"
+            className="rounded-full px-6 font-thin md:px-5 mt-5"
             onClick={() => navigate("/", "contactUs")}
           >
             Contact Us

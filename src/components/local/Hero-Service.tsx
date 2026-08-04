@@ -3,12 +3,8 @@ import { services } from "@/pages/Services";
 export function HeroService() {
   return (
     <section id="hero" className="flex flex-col px-6 pb-12 md:px-8 md:pb-10">
-      <h1 className="text-3xl font-medium text-black md:text-5xl">
-        Elevate Your System,
-      </h1>
-
-      <h1 className="text-3xl font-medium text-black md:text-5xl">
-        Simplify Your Business
+      <h1 className="text-3xl font-medium text-black md:text-5xl max-w-[85%] lg:max-w-[50%]">
+        Elevate Your System, Simplify Your Business
       </h1>
 
       <div className="mt-3 lg:max-w-[30%]">

@@ -1,15 +1,14 @@
-import { CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
-import { useBetterNavigate } from "@/lib/common";
 import { HeroService } from "@/components/local/Hero-Service";
+import { PanelService } from "@/components/local/Panel-Service";
 
 interface ProcessStep {
   title: string;
   description: string;
 }
 
-const processSteps: ProcessStep[] = [
+// not used
+export const processSteps: ProcessStep[] = [
   {
     title: "Discovery",
     description:
@@ -271,11 +270,10 @@ export const services: ServiceProps[] = [
 ];
 
 export default function ServicesPage() {
-  const navigate = useBetterNavigate();
-
   return (
     <>
       <HeroService />
+      <PanelService />
     </>
   );
 }

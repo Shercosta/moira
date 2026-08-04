@@ -2,6 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
 import { useBetterNavigate } from "@/lib/common";
+import { HeroService } from "@/components/local/Hero-Service";
 
 interface ProcessStep {
   title: string;
@@ -42,13 +43,13 @@ interface ServiceProps extends QACProps {
   deliverables: string[];
 }
 
-const services: ServiceProps[] = [
+export const services: ServiceProps[] = [
   {
     h4: "Custom Software",
     subtitle: "Tailored Digital Solutions",
     p: "We build scalable web, mobile, and enterprise applications designed specifically for your business objectives.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/1.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/6.webp",
     deliverables: [
       "Custom Business Systems",
       "Enterprise Applications",
@@ -76,7 +77,7 @@ const services: ServiceProps[] = [
     subtitle: "Scalable Cloud Solutions",
     p: "Deploy secure, scalable solutions using modern cloud platforms and infrastructure best practices.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/2.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/10.webp",
     deliverables: [
       "Cloud Deployment",
       "Infrastructure Setup",
@@ -90,7 +91,7 @@ const services: ServiceProps[] = [
     subtitle: "Continuous Improvement",
     p: "Receive continuous maintenance, performance improvements, monitoring, and technical assistance.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/3.jpg",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/9.webp",
     deliverables: [
       "Performance Tuning",
       "System Monitoring",
@@ -132,7 +133,7 @@ const services: ServiceProps[] = [
     subtitle: "Powerful Web Platforms",
     p: "Develop secure, scalable web applications with custom features designed around your workflow.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/6.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/1.webp",
     deliverables: [
       "Custom Dashboard",
       "Authentication System",
@@ -273,132 +274,8 @@ export default function ServicesPage() {
   const navigate = useBetterNavigate();
 
   return (
-    <main className="bg-background text-primary">
-      {/* Hero */}
-
-      <section className="relative overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-accent-500/20 blur-[120px]" />
-
-        <div className="container mx-auto px-6 py-28 text-center relative z-10">
-          <p className="text-center text-teal">[ Our Services ]</p>
-
-          <h1 className="mt-6 text-5xl font-bold md:text-6xl text-teal">
-            Software Built Around
-            <span className="text-primary"> Your Business</span>
-          </h1>
-
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-muted">
-            We help businesses transform ideas into reliable software solutions
-            through modern technologies, thoughtful design, and collaborative
-            development.
-          </p>
-        </div>
-      </section>
-
-      {/* Services */}
-
-      <section className="container mx-auto px-6 py-24 space-y-32">
-        {services.map((service, index) => (
-          <div
-            key={service.h4}
-            className={`grid items-center gap-16 lg:grid-cols-2 ${
-              index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-            }`}
-          >
-            {/* Image */}
-
-            <div className="overflow-hidden rounded-3xl border border-surface">
-              <img
-                src={service.image}
-                alt={service.h4}
-                className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-              />
-            </div>
-
-            {/* Content */}
-
-            <div>
-              <p className="font-semibold uppercase tracking-widest text-muted">
-                {service.subtitle}
-              </p>
-
-              <h2 className="mt-3 text-4xl font-bold">{service.h4}</h2>
-
-              <p className="mt-6 leading-8 text-muted">{service.p}</p>
-
-              <div className="mt-10 rounded-3xl bg-surface p-6">
-                <h3 className="mb-5 text-xl font-semibold">
-                  Typical Deliverables
-                </h3>
-
-                <div className="grid gap-4 sm:grid-cols-2">
-                  {service.deliverables.map((item) => (
-                    <div key={item} className="flex items-center gap-3">
-                      <CheckCircle2 size={18} className="text-secondary" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* Process */}
-
-      <section className="bg-subtle-dark">
-        <div className="container mx-auto px-6 py-24">
-          <div className="text-center">
-            <p className="font-thin text-muted">[ Our Process ]</p>
-
-            <h2 className="mt-4 text-4xl font-bold text-text-light">
-              How We Build Software
-            </h2>
-          </div>
-
-          <div className="mt-20 grid gap-8 md:grid-cols-5">
-            {processSteps.map((step, i) => (
-              <div key={step.title} className="rounded-3xl bg-border p-6">
-                <div className="text-4xl font-bold text-teal">
-                  {String(i + 1).padStart(2, "0")}
-                </div>
-
-                <h3 className="mt-6 text-xl font-semibold text-secondary">
-                  {step.title}
-                </h3>
-
-                <p className="mt-3 text-sm leading-7 text-muted">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-
-      <section className="px-6 py-18">
-        <div className="container mx-auto rounded-[40px] bg-surface p-16 text-center">
-          <h2 className="text-4xl font-bold">
-            Ready to Build Something Great?
-          </h2>
-
-          <p className="mx-auto mt-6 max-w-2xl text-muted leading-8">
-            Whether you're starting a new project or improving an existing
-            system, we'd love to help turn your ideas into reliable software.
-          </p>
-
-          <Button
-            size="lg"
-            className="rounded-full px-6 font-thin md:px-5 mt-5"
-            onClick={() => navigate("/", "contactUs")}
-          >
-            Contact Us
-          </Button>
-        </div>
-      </section>
-    </main>
+    <>
+      <HeroService />
+    </>
   );
 }

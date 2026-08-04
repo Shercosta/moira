@@ -292,28 +292,8 @@ export default function ServicesPage() {
             through modern technologies, thoughtful design, and collaborative
             development.
           </p>
-
-          {/* <Button size="lg" className="mt-10 rounded-full">
-            Start Your Project
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button> */}
         </div>
       </section>
-
-      {/* Navigation */}
-
-      {/* <section className="sticky top-16 z-20 border-y border-white/10 bg-[#020617]/90 backdrop-blur">
-        <div className="container mx-auto flex gap-3 overflow-auto px-6 py-4">
-          {services.map((service) => (
-            <button
-              key={service.h4}
-              className="whitespace-nowrap rounded-full border border-white/10 px-5 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400"
-            >
-              {service.h4}
-            </button>
-          ))}
-        </div>
-      </section> */}
 
       {/* Services */}
 
@@ -360,10 +340,6 @@ export default function ServicesPage() {
                   ))}
                 </div>
               </div>
-
-              {/* <Button className="mt-8 rounded-full bg-cyan-500 hover:bg-cyan-400">
-                Learn More
-              </Button> */}
             </div>
           </div>
         ))}
@@ -400,44 +376,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      {/* Technologies */}
-
-      {/* <section className="container mx-auto px-6 py-24">
-        <div className="text-center">
-          <p className="uppercase tracking-widest text-cyan-400">
-            Technologies
-          </p>
-
-          <h2 className="mt-4 text-4xl font-bold">
-            Tools We Love Working With
-          </h2>
-        </div>
-
-        <div className="mt-16 flex flex-wrap justify-center gap-4">
-          {[
-            "React",
-            "Next.js",
-            "Node.js",
-            "Laravel",
-            "Flutter",
-            "Tailwind CSS",
-            "PostgreSQL",
-            "MongoDB",
-            "Docker",
-            "AWS",
-            "Azure",
-            "Figma",
-          ].map((tech) => (
-            <div
-              key={tech}
-              className="rounded-full border border-white/10 bg-slate-900 px-5 py-3 transition hover:border-cyan-400 hover:text-cyan-400"
-            >
-              {tech}
-            </div>
-          ))}
-        </div>
-      </section> */}
 
       {/* CTA */}
 

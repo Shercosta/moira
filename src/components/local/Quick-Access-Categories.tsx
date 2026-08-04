@@ -154,7 +154,7 @@ export function QuickAccessCategories() {
   return (
     <section
       id="quickAccessCategories"
-      className="bg-subtle-dark px-5 py-12 md:px-8 lg:px-16"
+      className="bg-subtle-dark-adaptable px-5 py-12 md:px-8 lg:px-16"
     >
       <div className="mx-auto max-w-4xl">
         <h2 className="text-center font-thin text-muted">

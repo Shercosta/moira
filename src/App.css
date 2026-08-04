@@ -260,3 +260,27 @@
   background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/light-bg.png");
   background-size: cover;
 }
+
+/* large */
+@media (min-width: 1024px) {
+  .bg-subtle-dark-adaptable {
+    background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/dark-bg.png");
+    background-size: cover;
+  }
+
+  .bg-subtle-light-adaptable {
+    background-image: url("https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/light-bg.png");
+    background-size: cover;
+  }
+}
+
+/* small-medium */
+@media (max-width: 1023px) {
+  .bg-subtle-dark-adaptable {
+    background-color: #1d413b;
+  }
+
+  .bg-subtle-light-adaptable {
+    background-color: #e9e9dd;
+  }
+}

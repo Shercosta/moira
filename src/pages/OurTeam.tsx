@@ -75,6 +75,33 @@ const proof = [
   },
 ];
 
+const partnerLogos = [
+  {
+    name: "Bank Tabungan Negara",
+    logo: "https://www.btn.co.id/-/media/Images/About/Logo/logo-btn-1.png?h=4500&w=4500&hash=2087883B32B8E7C63C2AF40022CA1313",
+  },
+  {
+    name: "Mandiri Utama Finance",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_Mandiri_Utama_Finance.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  },
+  {
+    name: "Indonesia Stock Exchange",
+    logo: "https://www.idx.co.id/media/jgad3455/logo-bursa-efek-indonesia-final.png?width=312&height=304&mode=max",
+  },
+  {
+    name: "PT Sarana Multi Infrastruktur",
+    logo: "https://avpn.asia/wp-content/uploads/2019/11/PT-SMI-Logo-1024x910.png",
+  },
+  {
+    name: "CNN",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg",
+  },
+  {
+    name: "MNC Play",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/9b/MNC_Play_%282019%29.png",
+  },
+];
+
 export default function OurTeam() {
   const navigate = useBetterNavigate();
   return (
@@ -109,7 +136,7 @@ export default function OurTeam() {
             Collective Industry Experience
           </h2>
 
-          <p className="mt-3 text-muted-foreground max-w-2xl">
+          <p className="mt-3 max-w-2xl text-muted-foreground">
             Our combined experience spans multiple industries and business
             domains.
           </p>
@@ -119,11 +146,52 @@ export default function OurTeam() {
           {industries.map((industry) => (
             <div
               key={industry}
-              className="rounded-xl border p-6 font-medium bg-surface"
+              className="rounded-xl border bg-surface p-6 font-medium"
             >
               {industry}
             </div>
           ))}
+        </div>
+
+        {/* Partners */}
+        <div className="mt-5">
+          <div className="mb-6">
+            <h3 className="text-xl font-medium">
+              Organizations We’ve Worked With
+            </h3>
+
+            <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+              Our team has contributed to projects across financial services,
+              media, public institutions, and other industries.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {partnerLogos.map((partner) => (
+              <div
+                key={partner.name}
+                className="
+            group flex h-32 items-center justify-center
+            rounded-xl border bg-background p-6
+            transition-all duration-300
+            hover:-translate-y-1 hover:border-primary/30
+            hover:bg-surface hover:shadow-sm
+          "
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="
+              max-h-16 w-full
+              object-contain
+              grayscale opacity-60
+              transition-all duration-300
+              group-hover:grayscale-0 group-hover:opacity-100
+            "
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -263,13 +331,23 @@ export default function OurTeam() {
         </p>
 
         {/* Button goes here */}
-        <Button
-          size="lg"
-          className="rounded-full px-6 font-thin md:px-5 mt-5"
-          onClick={() => navigate("/", "contactUs")}
-        >
-          Contact Us
-        </Button>
+        <div className="flex justify-center gap-x-5">
+          <Button
+            size="lg"
+            className="rounded-full px-6 font-thin md:px-5 mt-5"
+            onClick={() => navigate("/", "contactUs")}
+          >
+            Contact Us
+          </Button>
+          <Button
+            variant={"outline"}
+            size="lg"
+            className="rounded-full px-6 font-thin md:px-5 mt-5"
+            onClick={() => navigate("/services")}
+          >
+            See Services
+          </Button>
+        </div>
       </section>
     </main>
   );

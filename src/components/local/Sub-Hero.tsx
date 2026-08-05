@@ -1,20 +1,24 @@
+import { shuffleArray } from "@/lib/common";
+import { services } from "@/pages/Services";
+
 export function SubHero() {
+  const [image1, image2, image3] = shuffleArray(services).map((s) => s.image);
   return (
     <div className="hidden md:flex justify-center gap-5 my-10">
       <img
-        src="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/tech-meeting-flatlay.jpg"
+        src={image1}
         alt="tech-meeting-flatlay.jpg"
-        className="object-fill aspect-5/4 w-60 rounded-lg rounded-tr-none"
+        className="object-cover aspect-5/4 w-60 rounded-lg rounded-tr-none"
       />
       <img
-        src="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/sample-sub-hero.jpg"
+        src={image2}
         alt="sample-sub-hero.jpg"
-        className="object-fill aspect-5/4 w-60 rounded-lg"
+        className="object-cover aspect-5/4 w-60 rounded-lg"
       />
       <img
-        src="https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/sample-sub-hero0.jpg"
+        src={image3}
         alt="sample-sub-hero0.jpg"
-        className="object-fill aspect-5/4 w-60 rounded-lg rounded-tl-none"
+        className="object-cover aspect-5/4 w-60 rounded-lg rounded-tl-none"
       />
     </div>
   );

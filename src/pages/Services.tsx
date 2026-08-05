@@ -1,6 +1,8 @@
 import type { QACProps } from "@/components/local/Quick-Access-Categories";
 import { HeroService } from "@/components/local/Hero-Service";
 import { PanelService } from "@/components/local/Panel-Service";
+import { Button } from "@/components/ui/button";
+import { useBetterNavigate } from "@/lib/common";
 
 interface ProcessStep {
   title: string;
@@ -270,10 +272,37 @@ export const services: ServiceProps[] = [
 ];
 
 export default function ServicesPage() {
+  const navigate = useBetterNavigate();
   return (
     <>
       <HeroService />
       <PanelService />
+
+      <section
+        id="cta"
+        className="flex flex-col px-6 pb-12 md:px-8 md:pb-10 gap-y-5 my-10"
+      >
+        <div className="flex w-full justify-center">
+          <span className="text-3xl text-center lg:max-w-[50%]">
+            Ready to experience the full capability of your business software?
+          </span>
+        </div>
+        <div className="flex w-full justify-center gap-5">
+          <Button
+            className="rounded-full px-6 font-thin md:px-5 mt-5"
+            onClick={() => navigate("/", "contactUs")}
+          >
+            Contact Us
+          </Button>
+          <Button
+            className="rounded-full px-6 font-thin md:px-5 mt-5"
+            variant={"outline"}
+            onClick={() => navigate("/team")}
+          >
+            Check Out Our Team
+          </Button>
+        </div>
+      </section>
     </>
   );
 }

@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { FaWhatsapp } from "react-icons/fa6";
 
 export const navItems = [
-  { label: "Home", id: "hero", route: "/" },
+  { label: "Home", id: null, route: "/" },
   { label: "Services", id: null, route: "/services" },
   { label: "Contact", id: "contactUs", route: "/" },
   // { label: "About", id: null, route: "/team" },

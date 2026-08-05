@@ -10,11 +10,12 @@ import { cn } from "@/lib/utils";
 import { FaWhatsapp } from "react-icons/fa6";
 
 export const navItems = [
-  { label: "Home", id: null, route: "/" },
-  { label: "Services", id: null, route: "/services" },
-  { label: "Contact", id: "contactUs", route: "/" },
-  // { label: "About", id: null, route: "/team" },
-  { label: "FAQ", id: "faq", route: "/" },
+  { label: "Home", id: null, route: "/", isNavbar: true },
+  { label: "Services", id: null, route: "/services", isNavbar: true },
+  { label: "Contact", id: "contactUs", route: "/", isNavbar: true },
+  // { label: "About", id: null, route: "/team", isNavbar: true },
+  { label: "FAQ", id: "faq", route: "/", isNavbar: true },
+  { label: "Our Team", id: null, route: "/team", isNavbar: false },
 ];
 
 export function Navbar() {
@@ -32,16 +33,18 @@ export function Navbar() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-2 md:w-120 justify-between">
-          {navItems.map((item) => (
-            <Button
-              variant={"none"}
-              className="font-normal btn-joe"
-              key={item.id}
-              onClick={() => navigate(item.route, item.id)}
-            >
-              {item.label}
-            </Button>
-          ))}
+          {navItems
+            .filter((n) => n.isNavbar)
+            .map((item) => (
+              <Button
+                variant={"none"}
+                className="font-normal btn-joe"
+                key={item.id}
+                onClick={() => navigate(item.route, item.id)}
+              >
+                {item.label}
+              </Button>
+            ))}
         </div>
 
         <div className="hidden md:flex items-center gap-2">

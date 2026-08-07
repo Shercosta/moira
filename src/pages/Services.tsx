@@ -92,7 +92,7 @@ export const services: ServiceProps[] = [
     subtitle: "Continuous Improvement",
     p: "Receive continuous maintenance, performance improvements, monitoring, and technical assistance.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/9.webp",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/1.webp",
     deliverables: [
       "Performance Tuning",
       "System Monitoring",

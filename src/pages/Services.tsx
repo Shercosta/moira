@@ -242,6 +242,34 @@ export const services: ServiceProps[] = [
     isQuickAccess: false,
   },
   {
+    h4: "Data Entry",
+    subtitle: "Accurate & Efficient Data Processing",
+    p: "Provide reliable data entry and data processing services with a focus on accuracy, consistency, and quick turnaround times.",
+    image:
+      "https://mekari.com/wp-content/uploads/2022/02/seorang-karyawan-sedang-melakukan-pekerjaan-data-entry.jpg",
+    deliverables: [
+      "Data Entry",
+      "Data Cleansing",
+      "Spreadsheet Management",
+      "Data Validation",
+    ],
+    isQuickAccess: false,
+  },
+  {
+    h4: "Dedicated Development Team",
+    subtitle: "Skilled Developers On Demand (Outsource Talent)",
+    p: "Strengthen your team with experienced Moira Technology Asia developers who integrate seamlessly into your existing workflows and projects.",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/18.jpg",
+    deliverables: [
+      "Dedicated Developers",
+      "Frontend & Backend Engineers",
+      "Project-Based Staffing",
+      "Long-Term Team Augmentation",
+    ],
+    isQuickAccess: false,
+  },
+  {
     h4: "Maintenance & Bug Fixes",
     subtitle: "Keep Software Running Smoothly",
     p: "Keep your software stable with regular updates, bug fixes, and ongoing technical support.",

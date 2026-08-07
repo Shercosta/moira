@@ -23,7 +23,7 @@ const TeamMembers: Member[] = [
   },
   {
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQH7rSaekcyQsA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729880492067?e=1787184000&v=beta&t=oPACBuVZ7zyEdCgeH4mUvxk1eov3gLMS7UURBQuoEeQ",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/ridwan.jpeg",
     caption: "Muhammad Ridwan Ramadhan",
   },
   {

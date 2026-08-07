@@ -214,6 +214,20 @@ export const services: ServiceProps[] = [
     isQuickAccess: false,
   },
   {
+    h4: "Dedicated Development Team",
+    subtitle: "Skilled Developers On Demand (Outsource Talent)",
+    p: "Strengthen your team with experienced Moira Technology Asia developers who integrate seamlessly into your existing workflows and projects.",
+    image:
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/18.jpg",
+    deliverables: [
+      "Dedicated Developers",
+      "Frontend & Backend Engineers",
+      "Project-Based Staffing",
+      "Long-Term Team Augmentation",
+    ],
+    isQuickAccess: false,
+  },
+  {
     h4: "System Integration",
     subtitle: "Connected Business Systems",
     p: "Connect your applications with third-party services, payment gateways, CRMs, ERPs, and other business tools.",
@@ -224,20 +238,6 @@ export const services: ServiceProps[] = [
       "CRM Integration",
       "ERP Connectivity",
       "Third-Party APIs",
-    ],
-    isQuickAccess: false,
-  },
-  {
-    h4: "Legacy System Modernization",
-    subtitle: "Modernize Existing Software",
-    p: "Upgrade existing software with modern technologies while preserving critical business functionality.",
-    image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/13.webp",
-    deliverables: [
-      "Code Refactoring",
-      "Technology Migration",
-      "System Upgrade",
-      "Compatibility Testing",
     ],
     isQuickAccess: false,
   },
@@ -256,16 +256,16 @@ export const services: ServiceProps[] = [
     isQuickAccess: false,
   },
   {
-    h4: "Dedicated Development Team",
-    subtitle: "Skilled Developers On Demand (Outsource Talent)",
-    p: "Strengthen your team with experienced Moira Technology Asia developers who integrate seamlessly into your existing workflows and projects.",
+    h4: "Legacy System Modernization",
+    subtitle: "Modernize Existing Software",
+    p: "Upgrade existing software with modern technologies while preserving critical business functionality.",
     image:
-      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/18.jpg",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/services/13.webp",
     deliverables: [
-      "Dedicated Developers",
-      "Frontend & Backend Engineers",
-      "Project-Based Staffing",
-      "Long-Term Team Augmentation",
+      "Code Refactoring",
+      "Technology Migration",
+      "System Upgrade",
+      "Compatibility Testing",
     ],
     isQuickAccess: false,
   },

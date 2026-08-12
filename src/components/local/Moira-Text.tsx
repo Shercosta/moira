@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { cn, useNavigateAndScroll } from "../../lib/common";
 
 interface MoiraTextProps {
@@ -7,23 +6,17 @@ interface MoiraTextProps {
 
 export function MoiraText({ className = "" }: MoiraTextProps) {
   const navscroll = useNavigateAndScroll();
-  // const [rotation, setRotation] = useState(0);
 
   return (
     <div
       className={cn("inline-flex cursor-pointer items-center gap-2", className)}
       onClick={() => navscroll("/")}
-      // onMouseEnter={() => setRotation((prev) => prev + 180)}
-      // onMouseLeave={() => setRotation((prev) => prev + 180)}
     >
       <img
         src="/moira-logo.png"
         alt="Moira"
         className="h-10 w-34 object-contain transition-transform duration-500"
-        // style={{ transform: `rotate(${rotation}deg)` }}
       />
-
-      {/* <span>Moira</span> */}
     </div>
   );
 }

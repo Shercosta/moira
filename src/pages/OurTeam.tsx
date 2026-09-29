@@ -184,7 +184,7 @@ export default function OurTeam() {
                   className="
               max-h-16 w-full
               object-contain
-              grayscale opacity-60
+              lg:grayscale lg:opacity-60
               transition-all duration-300
               group-hover:grayscale-0 group-hover:opacity-100
             "

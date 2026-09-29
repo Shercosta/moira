@@ -33,12 +33,12 @@ const TeamMembers: Member[] = [
   },
   {
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQHWDJlZ5g_bxw/profile-displayphoto-shrink_400_400/B56ZTO047LGoAo-/0/1738636759485?e=1787184000&v=beta&t=nAB2PcXyk81lSNJ9lvUq40-hMJLno8LMfZKyzPl0Eh4",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/costa.jpg",
     caption: "Geizka Rozilia Ruicosta",
   },
   {
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQHKyobMoj2PrQ/profile-displayphoto-shrink_800_800/B56ZTPIMZSGoAc-/0/1738641819645?e=1787184000&v=beta&t=ue-bFuQbGNRv-TFRmCH7COSAaYovvsB85OKy-aLGNlU",
+      "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/meisya.jpg",
     caption: "Meisya Amanda Aldi",
   },
 ];

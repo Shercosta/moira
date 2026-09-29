@@ -9,8 +9,8 @@ export function HeroService() {
 
       <div className="mt-3 lg:max-w-[30%]">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          dolores.
+          Discover solutions designed to help your business grow with clarity,
+          confidence, and lasting impact.
         </p>
       </div>
 

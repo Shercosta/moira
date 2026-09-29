@@ -86,7 +86,7 @@ const partnerLogos = [
   },
   {
     name: "Indonesia Stock Exchange",
-    logo: "https://www.idx.co.id/media/jgad3455/logo-bursa-efek-indonesia-final.png?width=312&height=304&mode=max",
+    logo: "https://raw.githubusercontent.com/Shercosta/moira/refs/heads/master/public/IDX_23063.png",
   },
   {
     name: "PT Sarana Multi Infrastruktur",
